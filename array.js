@@ -26,13 +26,32 @@ for(var i = 0; i < diasdasemana.length; i++){
 }
 
 
-var fibonnaci = []
+//var fibonnaci = []
 
-fibonnaci[0] = 0
-fibonnaci[1] = 1
-fibonnaci[2] = 2
+//fibonnaci[0] = 0
+//fibonnaci[1] = 1
+//fibonnaci[2] = 2
 //acessando elementos atraves da iteração
-for(var f = 3; f < 20; f++ ){
-      fibonnaci[f] = fibonnaci[f - 1] + fibonnaci[f - 2] 
-}
-console.log(fibonnaci)
+//for(var f = 3; f < 20; f++ ){
+//    fibonnaci[f] = fibonnaci[f - 1] + fibonnaci[f - 2] 
+//}
+//console.log(fibonnaci)
+
+//inserindo valores no array
+var lista = [0, 1, 2, 3, 4, 5, 6]
+
+//aqui você consegue inserir valores para o array primeiro escolhendo o seu indice e depois o valor
+//que vai receber, ex: no indice 9 ele está recebendo o valor 11 
+lista[7] = 7
+lista[8] = 8
+lista[9] = 11
+//push ele adiciona um novo valor sempre no final do array
+lista.push(9)
+lista.push(10)
+//unshift ele adiciona um novo valor sempre no inicio do array, toda vez que você adiciona
+//esses valores ele se transforma no indice 0 sempre
+lista.unshift(-1)
+lista.unshift(-2)
+lista.unshift(-8)
+
+console.log(lista)
