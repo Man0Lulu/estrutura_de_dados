@@ -15,3 +15,9 @@ mes[10] = 'novembro'
 mes[11] = 'dezembro'
 
 console.log(mes[1])
+
+//novo jeito de fazer array
+var diasdasemana = new Array('segunda-feira', 'teça-feira', 'quarta-feira',
+'quinta-feira', 'sexta-feira', 'sabado', 'domingo')
+
+console.log(diasdasemana[5])
