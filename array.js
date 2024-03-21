@@ -54,4 +54,10 @@ lista.unshift(-1)
 lista.unshift(-2)
 lista.unshift(-8)
 
+//remover o valor do ultimo
+lista.pop()
+//remover o valor do inicio
+lista.shift()
+
+
 console.log(lista)
