@@ -71,3 +71,16 @@ posicoes.splice(4,5)
 //e depois de outra virgula os valores que você quer adicionar
 posicoes.splice(4, 0, 6, 8)
 console.log(posicoes)
+
+//array bidmensional
+var energeticos = []
+//aqui eu tô colocando os elementos de cada posição 
+var sabor1 = ['uva', 'original', 'melancia']
+var sabor2 = ['maçã verde', 'pessego', 'cereja']
+//aqui eu tô falando que o indice que começar em 0, vai ser sabor 1
+//e para o indice 1, vai ser o array sabor 2
+energeticos[0] = sabor1
+energeticos[1] = sabor2
+//aqui eu tô colocando o indice de qual array vai aparecer e depois o indice do array que eu selecionei
+console.log(energeticos[0][2])
+console.log(energeticos[1][1])
