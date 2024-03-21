@@ -59,5 +59,15 @@ lista.pop()
 //remover o valor do inicio
 lista.shift()
 
+//console.log(lista)
 
-console.log(lista)
+//removendo valores e/ou adicionando incluindo primeiro o indice escolhido
+var posicoes = [1, 2, 3, 4, 5, 6, 7 , 8, 9, 10, 11, 12]
+//aqui ele vai incluir o indice 4 e ir apagando os valores até o indice 6
+posicoes.splice(4,5)
+
+//e pra adicionar além de incluir o indice que você quer,
+//depois da virgula o indice tem ser 0,
+//e depois de outra virgula os valores que você quer adicionar
+posicoes.splice(4, 0, 6, 8)
+console.log(posicoes)
