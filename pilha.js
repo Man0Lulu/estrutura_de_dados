@@ -67,22 +67,43 @@
 // stack.pop();
 // stack.print();
 
-function dec2Bin(decNumber){
+// function dec2Bin(decNumber){
+//     var restStack = [],
+//     rest,
+//     binaryString = ''
+
+//     while(decNumber > 0){
+//         rest = Math.floor(decNumber % 2)
+//         restStack.push(rest)
+//         decNumber = Math.floor(decNumber / 2)
+//     }
+    
+//     while(restStack.length > 0){
+//         binaryString += restStack.pop().toString()
+//     }
+
+//     return binaryString
+// }
+
+//  console.log(dec2Bin(25))
+
+function baseConverter(decNumber, base) {
     var restStack = [],
     rest,
-    binaryString = ''
+    baseString = '',
+    digits = '0123456789ABCDEF'
 
-    while(decNumber > 0){
-        rest = Math.floor(decNumber % 2)
+    while(decNumber > 0) {
+        rest = Math.floor(decNumber % base)
         restStack.push(rest)
-        decNumber = Math.floor(decNumber / 2)
-    }
-    
-    while(restStack.length > 0){
-        binaryString += restStack.pop().toString()
+        decNumber = Math.floor(decNumber / base)
     }
 
-    return binaryString
+    while(restStack.length > 0){
+        baseString += digits[restStack.pop()]
+        }
+        
+        return baseString
 }
 
- console.log(dec2Bin(25))
+console.log(baseConverter(123, 16))
